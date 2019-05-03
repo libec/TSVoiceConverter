@@ -38,30 +38,6 @@ public class TSVoiceConverter {
         let encode = EncodeWAVEFileToAMRFile(wavCString, amrCString, 1, 16)
         return Bool(encode)
     }
-
-    /**
-    Detect whether the file is AMR type
- 
-     - parameter filePath: The file path
- 
-     - returns: True of false
-    */
-    public class func isAMRFile(_ filePath: String) -> Bool {
-        let result = String.init(filePath)
-        return isAMRFile(result)
-    }
-
-    /**
-    Detect whether the file is MP3 type
- 
-     - parameter filePath: The file path
- 
-     - returns: True of false
-    */
-    public class func isMP3File(_ filePath: String) -> Bool {
-        let result = String.init(filePath)
-        return isMP3File(result)
-    }
 }
 
 
